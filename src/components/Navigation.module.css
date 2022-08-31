@@ -1,0 +1,120 @@
+.navigation__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  /* color: #411530;
+  background: #f8ddcb; */
+  /* background: #e5a0dc; */
+  background: #e0e4ed;
+  color: #793b89;
+  font-weight: 600;
+}
+
+.brand__logo {
+  color: #f5e8c7;
+  background: #d61c4e;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.brand__logo:hover {
+  /* color: #d61c4e; */
+  background: #411530;
+}
+
+.nav__img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > * {
+  margin: 0 5px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user > * {
+  margin: 0 5px;
+}
+
+.nav__link {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav__link:hover {
+  color: #f5e8c7;
+  background: #411530;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav__link.active {
+  padding: 5px 10px;
+  color: #f5e8c7;
+  background: #411530;
+  border-radius: 10px;
+}
+
+.nav__link__user {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav__link__user:hover {
+  color: #f5e8c7;
+  background: #d61c4e;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav__link__user.active {
+  padding: 5px 10px;
+  color: #f5e8c7;
+  background: #d61c4e;
+  border-radius: 10px;
+}
+
+.menu__button {
+  display: none;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.hide__navbar__column {
+  display: none;
+}
+
+.show__navbar__column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar,
+  .user {
+    display: none;
+  }
+
+  .menu__button {
+    display: block;
+  }
+}

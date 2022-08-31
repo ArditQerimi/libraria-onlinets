@@ -1,0 +1,126 @@
+.hero__container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background: #edf7f6;
+}
+
+.hero__container > * {
+  padding: 40px;
+}
+
+.hero__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #411530;
+}
+
+.hero__description {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #411530;
+}
+
+.searchbtn__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+  /* overflow: hidden; */
+  border-radius: 10px;
+  padding: 5px 0px;
+  position: relative;
+  z-index: 1;
+  /* z-index: 9999; */
+}
+
+.searchbtn__container > * {
+  padding: 10px 0px;
+}
+
+.input__container {
+  width: 70%;
+}
+
+.search__input {
+  padding: 16.5px 5px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #411530;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.btn__container {
+  width: 30%;
+}
+
+.search__button {
+  padding: 15px 5px;
+  /* width: 30%; */
+  cursor: pointer;
+  text-align: center;
+  color: #f5e8c7;
+  background: #411530;
+  border: 1px solid #411530;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.search__button:hover {
+  background: #f5e8c7;
+  color: #411530;
+  border-left: 0px;
+}
+
+.search_dropdown__container {
+  color: #000;
+  background: #f5e8c7;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: absolute;
+  /* bottom: -51px; */
+  /* z-index: 99999; */
+}
+
+.searched_title__container {
+  width: 100%;
+  background: aquamarine;
+  margin: 2px 0;
+}
+
+.searched_title {
+  /* width: 300px; */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero__img__container {
+  width: 85%;
+}
+
+.hero__img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__container {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__img__container {
+    width: 75%;
+  }
+
+  .hero__img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}

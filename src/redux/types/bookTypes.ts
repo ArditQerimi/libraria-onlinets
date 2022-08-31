@@ -1,0 +1,6 @@
+export enum bookTypes {
+  GET_BOOKS = "GET_BOOKS",
+  POST_BOOKS = "POST_BOOKS",
+  DELETE_BOOK = "DELETE_BOOK",
+  EDIT_BOOK = "EDIT_BOOK",
+}
